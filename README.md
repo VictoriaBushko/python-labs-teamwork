@@ -1,2 +1,2 @@
-# python-labs-teamwork
-python-labs-teamwork-course
+# python labs teamwork course
+python labs for code review practise
