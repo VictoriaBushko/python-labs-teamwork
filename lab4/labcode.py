@@ -1,16 +1,16 @@
 class PreciousStone:
     def __init__(self, carats, price, name, public_int_field, public_str_field):
-        self.carats = carats
-        self.__price = price
-        self.__name = name
+        self.set_carats(carats)
+        self.set_price(price)
+        self.set_name(name)
         self.public_int_field = public_int_field
         self.public_str_field = public_str_field
 
     def get_carats(self):
-        return self.carats
+        return self.__carats
 
     def set_carats(self, carats):
-        self.carats = carats
+        self.__carats = carats
 
     def get_price(self):
         return self.__price
@@ -25,12 +25,12 @@ class PreciousStone:
         self.__name = name
 
     def __str__(self):
-        return (f"PreciousStone(name: {self.__name}, carats: {self.carats}, "
+        return (f"PreciousStone(name: {self.__name}, carats: {self.__carats}, "
                 f"price: {self.__price}, public_int_field: {self.public_int_field}, "
                 f"public_str_field: {self.public_str_field})")
 
     def __repr__(self):
-        return (f"PreciousStone(name={self.__name!r}, carats={self.carats!r}, "
+        return (f"PreciousStone(name={self.__name!r}, carats={self.__carats!r}, "
                 f"price={self.__price!r}, public_int_field={self.public_int_field!r}, "
                 f"public_str_field={self.public_str_field!r})")
 
